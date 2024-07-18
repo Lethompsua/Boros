@@ -1,0 +1,324 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 12 abr 2024, 16:08:16
+    Author     : manol
+*/
+
+
+body
+{
+
+    margin: 0;
+    padding: 0;
+  /* background: url(../img/purple3.jpg) no-repeat center  top; */
+    background-image: url('img/purple3.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.Loginbox
+{
+    width: 320px;
+    height: 420px;
+    background: black;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 20px;
+
+}
+
+
+.Loginbox .LogonV
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.Loginbox h1
+{
+
+    margin: 0%;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+
+
+}
+
+.Loginbox label
+{
+
+    margin: 0%;
+    padding: 0%;
+    font-weight: bold;
+    display: block;
+}
+
+.Loginbox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Loginbox input[type="text"],
+.Loginbox input[type="password"]
+{
+    border: none;
+    border-bottom: 1px  solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+
+.Loginbox input[type="submit"]
+{
+
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color:blueviolet;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.Loginbox a
+{
+
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+
+}
+
+
+.Loginbox a:hover
+{
+ color: blueviolet;   
+}
+
+
+
+input[type="submit"] {
+    background-color: #4b097a; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px; 
+    margin: 4px 2px; 
+    transition-duration: 0.4s; 
+    cursor: pointer; 
+}
+
+
+input[type="submit"]:hover {
+    background-color: #480872; 
+}
+
+
+
+
+
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Botón para cerrar el modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: black; /* Cambiado a negro según tu estilo */
+    margin: auto; /* Centro horizontalmente */
+    margin-top: 15%; /* Ajuste de margen superior para centrar verticalmente */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4); /* Añadido sombreado */
+    width: 80%;
+    max-width: 400px; /* Limita el ancho del modal */
+}
+
+/* Botón para cerrar el modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.Popup {
+    position: absolute;
+    top: -150%;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: black; /* Cambiado el color de fondo */
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 20px; /* Ajustado el radio del borde */
+    color: #fff; /* Cambiado el color del texto */
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                 transform  20ms ease-in-out 0ms;
+}
+
+.Popup.active
+{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform  20ms ease-in-out 0ms;
+
+}
+
+
+.Popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Ajustado el lado de cierre */
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%; /* Cambiado el radio del borde para que sea redondo */
+    cursor: pointer;
+}
+
+.Popup h1 {
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 22px; /* Ajustado el tamaño de fuente */
+}
+
+.Popup .form-element {
+    margin-bottom: 20px; /* Ajustado el margen inferior */
+}
+
+.Popup .form-element label {
+    font-weight: bold;
+}
+
+.Popup input[type="text"],
+.Popup input[type="password"],
+.Popup input[type="email"],
+.Popup input[type="date"],
+.Popup input[type="file"] {
+    width: calc(100% - 20px); /* Ajustado el ancho de los campos de entrada */
+    margin-bottom: 10px; /* Ajustado el margen inferior */
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #fff; /* Cambiado el color del borde inferior */
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 10px; /* Ajustado el relleno */
+}
+
+.Popup input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Popup input[type="submit"]:hover {
+    background-color: #480872; /* Cambiado el color de fondo al pasar el mouse */
+}
+
+.Popup input[type="file"] {
+    border: 1px solid #fff; /* Cambiado el estilo del borde */
+    padding: 5px 10px; /* Ajustado el relleno */
+}
+
+.Popup input[type="file"]:focus {
+    outline: none;
+    border-color: blueviolet; /* Cambiado el color del borde al enfocar */
+}
+

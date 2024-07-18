@@ -1,0 +1,84 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 12 abr 2024, 17:28:06
+    Author     : manol
+*/
+
+
+body {
+    /* background-color: #2f2d2d; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#10272e, #aa00ff);
+}
+
+
+.buscar-avanzada {
+    width: 70%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    color: #fff;
+    
+    
+}
+
+.buscar-avanzada h2 {
+    border-bottom: 1px solid #bfbfbf;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.buscar-avanzada form {
+    display: flex;
+    flex-direction: column;
+}
+
+.buscar-avanzada .form-group {
+    margin-bottom: 20px;
+}
+
+.buscar-avanzada label {
+    font-size: 1.1rem;
+    
+}
+
+.buscar-avanzada input[type="text"],
+.buscar-avanzada input[type="date"],
+.buscar-avanzada select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+}
+
+.buscar-avanzada button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #c812e0;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buscar-avanzada button[type="submit"]:hover {
+    background-color: #6b0f7d;
+}
+
+
+
