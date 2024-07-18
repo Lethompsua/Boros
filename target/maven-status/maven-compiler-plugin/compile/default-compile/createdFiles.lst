@@ -4,6 +4,7 @@ com\mycompany\pw1\classes\Conexion.class
 com\mycompany\pw1\models\Usuarios_.class
 com\mycompany\pw1\servlets\PerfilServlet.class
 com\mycompany\pw1\persistencia\exceptions\PreexistingEntityException.class
+com\mycompany\pw1\persistencia\query.class
 com\mycompany\pw1\persistencia\exceptions\NonexistentEntityException.class
 com\mycompany\pw1\exceptions\IllegalOrphanException.class
 com\mycompany\pw1\servlets\busquedaPublicacionServlet.class
